@@ -1,0 +1,26 @@
+{
+  "customers": [
+    { "customer_id": 101, "name": "Alice", "email": "alice@example.com", "address_id": 201 },
+    { "customer_id": 102, "name": "Bob", "email": "bob@example.com", "address_id": 202 }
+  ],
+  "addresses": [
+    { "address_id": 201, "street": "123 Main St", "city": "New York", "zip_code": "10001" },
+    { "address_id": 202, "street": "456 Elm St", "city": "Los Angeles", "zip_code": "90001" }
+  ],
+  "orders": [
+    { "order_id": 301, "customer_id": 101, "order_date": "2024-02-16", "total_price": 130 },
+    { "order_id": 302, "customer_id": 101, "order_date": "2024-02-18", "total_price": 90 },
+    { "order_id": 303, "customer_id": 102, "order_date": "2024-02-19", "total_price": 120 }
+  ],
+  "order_items": [
+    { "order_id": 301, "product_id": 501, "category": "Sneakers", "size": 42, "quantity": 1, "subtotal": 50 },
+    { "order_id": 301, "product_id": 502, "category": "Boots", "size": 44, "quantity": 1, "subtotal": 80 },
+    { "order_id": 302, "product_id": 502, "category": "Boots", "size": 44, "quantity": 2, "subtotal": 90 },
+    { "order_id": 303, "product_id": 503, "category": "Running Shoes", "size": 41, "quantity": 1, "subtotal": 120 }
+  ],
+  "tax_and_discount": [
+    { "order_id": 301, "discount": 10.0, "tax": 5.5 },
+    { "order_id": 302, "discount": 5.0, "tax": 3.0 },
+    { "order_id": 303, "discount": 8.0, "tax": 4.5 }
+  ]
+}
